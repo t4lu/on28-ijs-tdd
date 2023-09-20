@@ -2,10 +2,14 @@
 
 const sum = require('./soma')
 
-// A função soma dois números, caso os números sejam iguais, a soma é triplicada
+// Enunciado: A função soma dois números, caso os números sejam iguais, a soma é triplicada
 describe("sum two numbers", () => {
    it('sum of 2 and 3 = 5', () => {
 
     expect(sum(2, 3)).toEqual(5);
+   })
+
+   test("Verifica a condição de valores iguais sendo somados e multiplicados por 3", () => {
+      expect(sum(2,2)).toEqual(12)
    })
 });
